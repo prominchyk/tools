@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <title>Tools</title>
+    <link href="https://fonts.googleapis.com/css2?family=Faster+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="styles.min.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+           
+</head>
+<body>
+    <header>
+    <img id="dove" src="dove.png" width="60px" height="60px">
+    hodgepodge
+    <div id="greeting"></div> 
+    <img id="fly" src="fly.png" width="30px" height="30px">
+    <p id="paraFly">Спробуйте спіймати</p>
+    </header> 
+    <aside>
+      <p id="asideTextMenu">Розділи сайту:</p>
+        <a id="proverb" href="https://prominchyk.github.io/color-transform/" title="Color transform"> [Кольорова трансформація] </a> <br> <br>
+        <a id='number' href="../mini-games/mini-games.html" title="Mini-games"> [Міні-ігри] </a>
+    </aside>
+
+    <nav id="menu">
+      <a href="#parent" class="active" id="elem1">Калькулятори фігур</a>
+      <a href="#parentMathCalc" id="elem2">Математичні калькулятори</a>
+      <a href='#textAnalys' id="elem3">Аналізатор тексту</a>
+      <a href="#screenKeyboard" id="elem4">Екранна клавіатура</a>
+      <a href="#noteBook" id="elem5">Записна книжка</a>
+    </nav>
+      
+    <main id="main">
+    <div id="parent" class="tab active" data-elem="elem1">
+       
+      <h1>Калькулятори фігур</h1>
+        
+      <div class="rectangle">
+        <label><div class="width"><span>Довжина (см)</span><input id="width"></div></label>
+        <label><div class="height"><span>Ширина (см)</span><input id="height"></div></label>
+        <div class="rect"> </div>
+      <div>
+        <button id="buttonPerim">Периметр прямокутника:</button><p id="resPerim"></p>
+      </div>
+      <div>
+        <button id="buttonSquare">Площа прямокутника:</button><p id="resSquare"></p>
+      </div>
+      </div>
+    
+      <div class="square">
+        <label><div class="widthSquare"><span>Довжина сторони (см)</span><input id="widthSquare"></div></label>
+        <div class="squarePict"> </div>
+      <div>
+        <button id="buttonPerimSquare">Периметр квадрата:</button><p id="resPerimSquare"></p>
+      </div>
+      <div>
+        <button id="buttonSquareSquare">Площа квадрата:</button><p id="resSquareSquare"></p>
+      </div>
+      </div>
+    
+      <div class="triangle">
+        <label><div class="width1Tr"><span>Довжина 1-ї сторони (см)</span><input id="width1Tr"></div></label>
+        <label><div class="width2Tr"><span>Довжина 2-ї сторони (см)</span><input id="width2Tr"></div></label>
+        <label><div class="width3Tr"><span>Довжина 3-ї сторони (см)</span><input id="width3Tr"></div></label>
+        <div class="trianglePicture"> </div>
+      <div>
+        <button id="buttonSquareTriangle">Площа трикутника:</button><p id="resSquareTriangle"></p>
+      </div>
+      </div>
+    
+      <div class="circle">
+        <label><div class="radiusCircle"><span>Радіус круга (см)</span><input id="radiusCircle"></div></label>
+        <div class="circlePict"> </div>
+      <div>
+        <button id="buttonLengthCircle">Довжина кола:</button><p id="resLengthCircle"></p>
+      </div>
+      <div>
+        <button id="buttonSquareCircle">Площа круга:</button><p id="resSquareCircle"></p>
+      </div>
+      </div>
+    
+    </div>
+    
+    
+    <div id="parentMathCalc" class="tab" data-elem="elem2">
+      <h1>Математичні калькулятори</h1>
+    
+      <div class="quadrEquation">
+        <h3>Знаходження коренів квадратного рівняння за його коефіцієнтами</h3>
+        <p><u><i>(Допустимі значення введення - цифри, '.' для дробових чисел та '-' для від'ємних чисел.)</i></u></p>
+        <label><div class="coef1"><span>1-ий коефіцієнт</span> <input id="coef1"></div></label>
+        <label><div class="coef2"><span>2-ий коефіцієнт</span> <input id="coef2"></div></label>
+        <label><div class="coef3"><span>3-ій коефіцієнт</span> <input id="coef3"></div></label>
+        <div>
+          <button id="buttonQuadrEquation">Корені рівняння:</button><p id="resQuadrEquation"></p>
+        </div>
+      </div>
+    
+      <div class="numberDivisors">
+        <h3>Знаходження ділителів натурального числа</h3>
+        <p><i><u>(Допустимі значення введення - цілі додатні числа.)</u></i></p>
+        <label><div class="numberDiv"><span>Число</span> <input id="numberDiv"></div></label>
+        <div>
+          <button id="buttonNumberDivisors">Ділителі числа:</button><p id="resNumberDivisors"></p>
+        </div>
+      </div>
+    
+      <div class="sharedDivisorsOfTwoNumbers">
+        <h3>Знаходження спільних ділителів двох натуральних чисел</h3>
+        <p><i><u>(Допустимі значення введення - цілі додатні числа.)</u></i></p>
+        <label><div class="number1"><span>Число 1</span> <input id="number1"></div></label>
+        <label><div class="number2"><span>Число 2</span> <input id="number2"></div></label>
+        <div>
+          <button id="buttonSharedDivisorsOfTwoNumbers">Спільні ділителі чисел:</button><p id="resSharedDivisorsOfTwoNumbers"></p>
+        </div>
+        <div>
+          <button id="buttonMaxSharedDivisor">Найбільший спільний ділитель:</button><p id="resMaxSharedDivisor"></p>
+        </div>
+      </div>
+    </div>
+    
+    <div id="textAnalys" class="tab" data-elem="elem3">
+      <h1>Аналізатор тексту</h1>
+    
+      <div class="textArea">
+        <form>
+          <textarea placeholder="Введіть Ваш текст..."></textarea><br>
+          <button id="reset" type="reset">Очистити</button>
+          <div>
+            <label><input type="checkbox" id="checkboxWordsNumber"> <p id="wordsNumber">Кількість слів у тексті:</p><span id="resWordsNumber"></span></label>
+          </div>
+          <div>
+            <label><input type="checkbox" id="checkboxSymbNumber"> <p id="symbolsNumber">Кількість символів у тексті:</p><span id="resSymbolsNumber"></span></label>
+          </div>
+          <div>
+            <label><input type="checkbox" id="checkboxSymbWithoutSpace"> <p id="symbolsNumberWithotSpace">Кількість символів у тексті, не рахуючи пробілів:</p><span id="resSymbolsWithoutSpace"></span></label>
+          </div>
+          <div>
+            <label><input type="checkbox" id="checkboxPercent"> <p id="percent">Процентне відношення кожного символа у тексті:</p><span id="resPercent"></span></label>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="screenKeyboard" class="tab" data-elem="elem4">
+      <h1>Екранна клавіатура</h1>
+      <form>
+        <textarea placeholder="Введіть Ваш текст за допомогою екранної або звичайної клавіатури..."></textarea><br>
+        <input id="screenKeyboardBackColor" type="color" value="#FFFFFF"> <span>Колір фону</span>
+        <input id="screenKeyboardFontColor" type="color" value="#000000"> <span>Колір шрифту</span>
+        <br><br>
+        <button id="resetScreenKeaboard" type="reset">Очистити</button>
+      </form>
+      <div id="buttonsScreenKeyboard">
+        <table id="tableScreenKeyboard">
+          <tr>
+            <td>!</td><td>"</td><td>№</td><td>;</td><td>%</td><td>:</td><td>?</td><td>*</td><td>(</td><td>)</td><td>_</td><td>+</td>
+          </tr>
+          <tr>
+            <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>0</td><td>-</td><td>=</td>
+          </tr>
+          <tr>
+            <td>Й</td><td>Ц</td><td>У</td><td>К</td><td>Е</td><td>Н</td><td>Г</td><td>Ш</td><td>Щ</td><td>З</td><td>Х</td><td>Ї</td>
+          </tr>
+          <tr>
+            <td>Ф</td><td>І</td><td>В</td><td>А</td><td>П</td><td>Р</td><td>О</td><td>Л</td><td>Д</td><td>Ж</td><td>Є</td><td id="backspace">BackSpace</td>
+          </tr>
+          <tr>
+            <td>Я</td><td>Ч</td><td>С</td><td>М</td><td>И</td><td>Т</td><td>Ь</td><td>Б</td><td>Ю</td><td>.</td><td>,</td><td id="capslock">Caps lock</td>
+          </tr>
+          <tr>
+            <td></td><td></td><td></td><td colspan="6" id="space">Space</td><td></td><td></td><td>Enter</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div id="noteBook" class="tab" data-elem="elem5">
+      <h1>Записна книжка</h1>
+      <div id="menuNoteBook">
+        <ul id="notes">
+        </ul>
+        <div id="create">
+          <button>Новий запис</button>
+        </div>
+      </div>
+      <div id="text">
+        <p id="regime"></p>
+        <textarea></textarea>
+        <button data-mode="create" data-key="">Зберегти</button>
+      </div>
+      <div id="empty"></div>
+    </div>
+
+    </main>
+    
+    <script src="script.min.js"></script>
+
+</body>
+</html>
